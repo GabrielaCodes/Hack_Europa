@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship & Placement Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>INNOVEXA</h1>
+        <input type="text" id="search" placeholder="Search internships, jobs, exams...">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#exams">Exams & Training</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
+        </ul>
+    </nav>
+    
+    <section id="internships">
+        <h2>Available Internships</h2>
+        <ul id="internship-list"></ul>
+    </section>
+    
+    <section id="recommendations">
+        <h2>Future Course & Job Recommendations</h2>
+        <p>We suggest courses and job paths based on your interests!</p>
+    </section>
+    
+    <section id="exams">
+        <h2>Exams & Interview Training</h2>
+        <p>Prepare for upcoming exams and ace your interviews.</p>
+    </section>
+    
+    <section id="chatbot">
+        <h2>Chatbot</h2>
+        <div id="chat-container">
+            <div id="chat"></div>
+            <input type="text" id="user-input" placeholder="Ask something...">
+            <button id="send-btn">Send</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Review System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Internship Review</h1>
+
+    <form id="reviewForm">
+        <label for="name">Name (Optional):</label>
+        <input type="text" id="name" placeholder="Enter your name (or leave blank)">
+
+        <label for="internship">Internship Name <span class="required">*</span>:</label>
+        <input type="text" id="internship" required placeholder="Enter internship name">
+
+        <label for="year">Year <span class="required">*</span>:</label>
+        <input type="number" id="year" required min="2000" max="2099" placeholder="Enter year">
+
+        <label for="month">Month <span class="required">*</span>:</label>
+        <select id="month" required>
+            <option value="">Select Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <label>Rating <span class="required">*</span>:</label>
+        <div class="stars" id="starRating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+
+        <label for="review">Review <span class="required">*</span>:</label>
+        <textarea id="review" required placeholder="Write your review here..."></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <h2>Previous Reviews</h2>
+    <div id="reviewsList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Resume Analyzer</h2>
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" accept=".pdf, .docx" required>
+
+            <button type="submit">Analyze Resume</button>
+        </form>
+
+        <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
